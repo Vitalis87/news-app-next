@@ -2,11 +2,11 @@ import { searchNews } from "../../lib/fetchNews";
 import NewsList from "../NewsList";
 
 
-type PageProps = {
+type Props = {
     searchParams: {term: string}
 }
 
-async function SearchPage({searchParams}: PageProps) {
+async function SearchPage({searchParams}: Props) {
     const news: NewsResponse = await searchNews(searchParams?.term);
     
   return (
