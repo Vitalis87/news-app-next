@@ -3,7 +3,7 @@ import NewsList from "../NewsList";
 
 
 type Props = {
-    searchParams: {term: string}
+    searchParams?: {term: string}
 }
 
 async function SearchPage({searchParams}: Props) {
